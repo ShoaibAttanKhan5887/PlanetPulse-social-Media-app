@@ -1,4 +1,3 @@
-"use client";
 import Header from "@/components/Header";
 import { getProviders, signIn } from "next-auth/react";
 import React from 'react'
