@@ -1,4 +1,4 @@
-import Button from "@/app/Button";
+import Button from "@/app/auth/signin/Button";
 import Header from "@/components/Header";
 import { getProviders, signIn } from "next-auth/react";
 import React from 'react'
