@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { getProviders, signIn } from "next-auth/react";
 import React from 'react'
+import Button from "./Button";
 
 //this happens at the browser
 export async function page() {
@@ -15,9 +16,7 @@ export async function page() {
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
             {/* Here we are giving that on getting sign in with google we need to redirect to the home page with callbackUrl */}
-          <button className="p-3 bg-blue-400 rounded-lg"onClick={() => signIn(provider.id, { callbackUrl: "/"})}>
-            Sign in with {provider.name}
-          </button>
+          <Button provider={provider} />
         </div>
       ))}
 
@@ -30,3 +29,6 @@ export async function page() {
 }
 
 export default page
+
+
+
