@@ -1,7 +1,7 @@
+import Button from "@/app/Button";
 import Header from "@/components/Header";
 import { getProviders, signIn } from "next-auth/react";
 import React from 'react'
-import Button from "./Button";
 
 //this happens at the browser
 export async function page() {
