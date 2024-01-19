@@ -22,8 +22,8 @@ function Suggestion() {
             <button className='text-gray-600 font-semibold'>See All</button>
         </div>
 
-        {suggestions.map((suggestion) =>(
-            <div className='flex items-center justify-between mt-3'>
+        {suggestions.map((suggestion, i) =>(
+            <div key={i} className='flex items-center justify-between mt-3'>
                 <img className='h-10 rounded-full border p-[2px]'
                 src={`https://i.pravatar.cc/150?img=${Math.ceil(Math.random()*70)}`}  />
 
