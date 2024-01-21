@@ -11,8 +11,8 @@ export const authOptions = {
     ],
     pages: {
         signIn: '/auth/signin',
+        secret: process.env.JWT_SECRET,
     },
-    secret: process.env.JWT_SECRET,
     callbacks: {
         async session ({ session, token, user }) {
             session.user.username = session.user.name
