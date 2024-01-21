@@ -9,6 +9,7 @@ export const authOptions = {
 
         })
     ],
+    secret: process.env.JWT_SECRET,
     pages: {
         signIn: '/auth/signin',
     },
@@ -23,7 +24,6 @@ export const authOptions = {
             session.user.uid = token.sub;
             return session;
         },
-        secret: process.env.JWT_SECRET,
     }
 }
 
