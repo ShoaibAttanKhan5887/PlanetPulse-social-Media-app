@@ -9,7 +9,6 @@ export const authOptions = {
 
         })
     ],
-    clientSecret: process.env.JWT_SECRET,
     pages: {
         signIn: '/auth/signin',
     },
