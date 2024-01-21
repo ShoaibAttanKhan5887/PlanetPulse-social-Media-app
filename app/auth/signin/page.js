@@ -13,7 +13,7 @@ export async function page() {
         <img className='w-80' src={'/images/PlanetPulseWording.png'}
         alt="App Logo" />
     <div className="mt-40">
-      {Object.values(providers ??{}).map((provider) => (
+      {Object.values(providers || {}).map((provider) => (
         <div key={provider.name}>
             {/* Here we are giving that on getting sign in with google we need to redirect to the home page with callbackUrl */}
           <Button provider={provider} />
